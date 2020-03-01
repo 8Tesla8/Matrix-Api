@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "Matrix": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "matrix",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    },
+    "Matrix.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Matrix' ">
+    <StartAction>Project</StartAction>
+    <LaunchUrl>matrix</LaunchUrl>
+    <ApplicationURL>http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Autofac\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Generator\" />
+    <Folder Include="Model\" />
+    <Folder Include="Store\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Coord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+</Project>
